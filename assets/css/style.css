@@ -809,10 +809,7 @@ section {
 /*--------------------------------------------------------------
 # About Us
 --------------------------------------------------------------*/
-.image-bg{
-  background-image: url(../img/membrete.png);
-  background-size: 100%;
-}
+
 .about .content h3 {
   font-weight: 600;
   font-size: 26px;
@@ -865,7 +862,7 @@ section {
   display: block;
   font-weight: 700;
   color: #555555;
-  margin-left: 50px;
+  margin-left: 40px;
 }
 
 .counts .count-box p {
@@ -1825,3 +1822,14 @@ section {
   
   text-decoration: underline;
 }
+.image-bg{
+  background-image: url(../img/membrete.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.sobre-nos {
+  line-height: 35px;
+  text-align: center;
+  font-weight: 600;
+}
+
