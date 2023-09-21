@@ -185,6 +185,18 @@
   });
 
   /**
+   * Hero2 carouselCustom indicators
+   */
+
+  let heroCarouselIndicatorsCustom = select("#hero2-carousel-indicators")
+  let heroCarouselItemsCustom = select('#heroCarouselCustom .carousel-item', true)
+
+  heroCarouselItemsCustom.forEach((item, index) => {
+    (index === 0) ?
+    heroCarouselIndicatorsCustom.innerHTML += "<li data-bs-target='#heroCarouselCustom' data-bs-slide-to='" + index + "' class='active'></li>":
+      heroCarouselIndicatorsCustom.innerHTML += "<li data-bs-target='#heroCarouselCustom' data-bs-slide-to='" + index + "'></li>"
+  });
+  /**
    * Testimonials slider
    */
   new Swiper('.testimonials-slider', {
